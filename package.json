@@ -1,0 +1,16 @@
+{
+  "name": "pspdfkit-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "dependencies": {
+    "next": "^9.1.1",
+    "pspdfkit": "^2021.4.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "scripts": {
+    "copy-assets": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public/",
+    "dev": "npm run copy-assets && next dev"
+  }
+}
