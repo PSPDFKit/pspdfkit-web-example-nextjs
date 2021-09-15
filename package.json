@@ -11,6 +11,8 @@
   },
   "scripts": {
     "copy-assets": "cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib ./public/",
-    "dev": "npm run copy-assets && next dev"
+    "dev": "npm run copy-assets && next dev",
+    "start": "npm run copy-assets && next start",
+    "build": "next build"
   }
 }
