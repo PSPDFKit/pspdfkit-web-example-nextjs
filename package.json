@@ -1,0 +1,18 @@
+{
+  "name": "pspdfkit-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN https://www.nutrient.io/legal/Nutrient_SDK_User_Evaluation_Subscription_Agreement",
+  "dependencies": {
+    "@nutrient-sdk/viewer": "1.1.0",
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "scripts": {
+    "copy-assets": "cp -R ./node_modules/@nutrient-sdk/viewer/dist/nutrient-viewer-lib ./public/ && cp -R ./node_modules/@nutrient-sdk/viewer/dist/nutrient-viewer.js ./public/nutrient-viewer-lib/nutrient-viewer.js",
+    "dev": "npm run copy-assets && next dev --turbo",
+    "build": "npm run copy-assets && next build",
+    "start": "next start"
+  }
+}
